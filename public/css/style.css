@@ -1,0 +1,110 @@
+@media only screen and (max-width:600px){
+    .text-brand{font-size: 22px; font-family: 'Grenze Gotisch', cursive;}
+    .img-brand{height: 50px;border-radius: 50px;width: 130px;margin-left: -25px;}
+    .top-info{background: black;color: white;text-align: center;font-weight: bold;font-family: lato, sans-serif;font-size: 12px;padding: 5px;}
+    .icon-info{height: 25px;margin-left: 10px;}
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{background: black;}
+    .text-product-title{margin:0px;font-family: 'Titillium Web', sans-serif;font-weight: 300;color: #bebebe;font-size: 20px;}
+    .text-product-description{margin:0px;font-family: 'Titillium Web', sans-serif;font-weight: 300;color: #bebebe;font-size: 14px;}
+    .text-product-price{margin: 0px;font-family: 'Titillium Web', sans-serif;color: black;font-weight: bold;font-size: 22px;}    
+    ul#cards li {display: inline}
+    .payment-icons .payment-icon {background-color:#ffffff4d;display: inline-block;opacity: .6;transition: opacity .3s;border-radius: 5px;padding-bottom: 0;padding: 3px 5px 5px;margin: 3px 3px 0;width:50px}
+    .link-footer li a{font-size: 12px;color:#4a4747;font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+    nav > ol > li a {color: black}
+    .no-responsive{display: none;}
+    .responsive{display: block;}
+    .google-btn { width: 160px;height: 42px;background-color: #4285f4;border-radius: 2px;box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);}
+    .google-icon-wrapper {position: absolute;margin-top: 1px;margin-left: 1px;width: 40px;height: 40px;border-radius: 2px;background-color: #fff;}
+    .google-icon {position: absolute;margin-top: 11px;margin-left: 11px;width: 18px;height: 18px;}
+    .btn-text {float: right;margin: 13px 13px 0 0;color: white;font-size: 10px;letter-spacing: 0.2px;font-family: "Roboto";}    
+    .google-btn:hover { -webkit-transition: all 3s ease;-moz-transition: all 3s ease;-ms-transition: all 3s ease;-o-transition: all 3s ease;transition: all 3s ease;border-color: #559fef;background: #1669F2;box-shadow: none;}
+    .facebook-btn-text {font-size: 10px; }
+   
+      .pendiente{
+        left: -7%;
+    }
+    .pendiente-selected{
+        left:-7%; color: #1c7239 !important;
+    }
+    .pagado{
+        left: 22%;
+      }
+      .pagado-selected{
+        left: 18%;color: #1c7239 !important;
+      }
+      .events-pendiente{
+        width: 32%; top: 0px !important; background: #1c7239 !important;
+      }
+      .events-enviado{
+        width: 67%; top: 0px !important; background: #1c7239 !important;
+      }
+      .enviando{
+        width: 45% !important;left: 47%;color: #1c7239 !important;
+      }
+      .events-entregado{
+        width: 100%; top: 0px !important; background: #1c7239 !important;
+      }
+      .entregando{
+        width: 45% !important;left: 75%!important;color: #1c7239 !important;
+      }
+      .search-box{
+       
+      }
+      
+}
+
+@media only screen and (min-width:900px) and (max-width:1600px){
+    .text-brand{font-size: 30px; font-family: 'Grenze Gotisch', cursive;}
+    .img-brand{height: 60px;border-radius: 50px;width: 140px;}
+    .top-info{background: black;color: white;text-align: center;font-weight: bold;font-family: lato, sans-serif;font-size: 12px;padding: 5px;}
+    .icon-info{height: 25px;margin-left: 10px;}
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{background: black;}    
+    .text-product-title{margin:0px;font-family: 'Titillium Web', sans-serif;font-weight: 300;color: #bebebe;}
+    .text-product-description{margin:0px;font-family: 'Titillium Web', sans-serif;font-weight: 300;color: #bebebe;}
+    .text-product-price{margin: 0px;font-family: 'Titillium Web', sans-serif;color: black;font-weight: bold;}
+    ul#cards li {display: inline}
+    .payment-icons .payment-icon {background-color:#ffffff4d;display: inline-block;opacity: .6;transition: opacity .3s;border-radius: 5px;padding-bottom: 0;padding: 3px 5px 5px;margin: 3px 3px 0;width:50px}    
+    .link-footer li a{font-size: 12px;color:#4a4747;font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+    nav > ol > li a {color: black}
+    .no-responsive{display: block;}
+    .responsive{display: none;}
+    .mercado-button:hover{-webkit-transition: all 3s ease;-moz-transition: all 3s ease;-ms-transition: all 3s ease;-o-transition: all 3s ease;transition: all 3s ease;background: #559fef;border-color: #559fef;}
+    .google-btn { width: 195px;height: 42px;background-color: #4285f4;border-radius: 2px;box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);}
+    .google-icon-wrapper {position: absolute;margin-top: 1px;margin-left: 1px;width: 40px;height: 40px;border-radius: 2px;background-color: #fff;}
+    .google-icon {position: absolute;margin-top: 11px;margin-left: 11px;width: 18px;height: 18px;}
+    .btn-text {float: right;margin: 11px 11px 0 0;color: white;font-size: 14px;letter-spacing: 0.2px;font-family: "Roboto";}    
+    .google-btn:hover { -webkit-transition: all 3s ease;-moz-transition: all 3s ease;-ms-transition: all 3s ease;-o-transition: all 3s ease;transition: all 3s ease;border-color: #559fef;background: #1669F2;box-shadow: none;}
+   
+      .pendiente{
+          left: -3%;
+      }
+      .pendiente-selected{
+          left:-3%; color: #1c7239 !important;
+      }
+      .pagado{
+        left: 30%;
+      }
+      .pagado-selected{
+        left: 30%;color: #1c7239 !important;
+      }
+      .events-pendiente{
+        width: 34%; top: 0px !important; background: #1c7239 !important;
+      }
+      .events-enviado{
+        width: 69%; top: 0px !important; background: #1c7239 !important;
+      }
+      .enviando{
+        left: 62%;color: #1c7239 !important;
+      }
+      .events-entregado{
+        width: 100%; top: 0px !important; background: #1c7239 !important;
+      }
+      .entregando{
+        width: 45% !important;left: 77% !important;color: #1c7239 !important;
+      }
+      .search-box{
+        width: 40%;
+        /* text-align: center; */
+        left: 30%;
+      }
+}
