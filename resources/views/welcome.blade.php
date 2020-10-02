@@ -28,7 +28,7 @@
   <section>
 	<div class="container" style="margin-top: 100px;margin-bottom: 100px;">
 		<h1 class="text-center mt-5">Tu próxima casa, hoy</h1>
-		<h6 class="text-center text-secondary mt-3" style="font-weight: 100">Encontrá propiedades en venta, alquileres, locales y mucho más</h6>
+		<h6 class="text-center text-secondary mt-3" style="font-weight: 100">~ Mas de 10 años en el mercado inmobiliario acompañando a nuestros clientes ~</h6>
 		<form method="POST" action="/busqueda">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<div class="input-group mb-3 search-box mt-4">
