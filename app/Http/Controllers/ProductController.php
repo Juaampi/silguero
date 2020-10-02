@@ -43,7 +43,7 @@ class ProductController extends Controller {
 		}
 
 		if(!empty($request['cloacas'])){
-			$product->gas = $request['cloacas'];
+			$product->cloacas = $request['cloacas'];
 			$product->save();
 		}
 
@@ -129,7 +129,9 @@ class ProductController extends Controller {
 	public function delete(Request $request){
 		$product = Product::find($request['id']);
 		$product->delete();
-		return redirect()->back()->with('success', 'success');
+		$products = Product::all();
+		return view('list', ['products' => $products]);
+		
 	}
 
 	public function administracion(){
