@@ -7,8 +7,10 @@
     <div class=col-md-6>
       <div class="swiper-container s3">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img style="width: 100%" src="img/slider1-prueba.jpg"></div>
-          <div class="swiper-slide"><img style="width: 100%" src="img/slider1-prueba.jpg"></div>                  
+          
+          <div class="swiper-slide"><img style="width: 100%" src="img-products/{{$product->img1}}"></div>
+          <div class="swiper-slide"><img style="width: 100%" src="img-products/{{$product->img2}}"></div>
+          <div class="swiper-slide"><img style="width: 100%" src="img-products/{{$product->img3}}"></div>                   
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
