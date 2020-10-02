@@ -61,7 +61,7 @@
 		<div class="card text-center">	
 			<div class="card-body">	
 			<p class="text-secondary">Tasamos tu propiedad con métodos y coeficientes profesionales. Realizando un estudio exhaustivo del mercado inmobiliario, entregando un informe preciso con los resultados obtenidos.</p>
-			<p><a href="#" class="btn btn-success">Contactar al Whatsapp</a></p>
+			<p><a href="https://wa.me/+5492257617239" class="btn btn-success">Contactar al Whatsapp</a></p>
 			<p class="text-secondary">Grupo Silguero Inmibiliaria.</p>
 			<p class="text-secondary">Reg 3255</p>
 			</div>
@@ -137,7 +137,7 @@
 				@endif
 					</h6>
 					<h6 style="font-weight: 400; margin: 0px;">{{$product->barrio}}, Mar del Plata</h6>
-					<h6 style="font-weight: 400; margin: 0px;">{{$product->ambientes}} Ambientes - {{$product->metros}} M&sup2;</h6>
+					<h6 style="font-weight: 400; margin: 0px;">@if($product->subcategory_id != 4 && $product->subcategory_id != 10){{$product->ambientes}} Ambientes - @endif {{$product->metros}} M&sup2;</h6>
 					</div>
 					
 				  </div>

@@ -23,7 +23,13 @@
             <div class="col-md-6">
                 <textarea type="text" class="form-control" name="descripcion" placeholder="{{$product->description}}"></textarea>
             </div>
-        </div>                       
+        </div>
+        <div class="form-group row">
+          <label for="description" class="col-md-4 col-form-label text-md-right">Información adicional</label>
+          <div class="col-md-6">
+              <textarea type="text" class="form-control" name="adicional" placeholder="{{$product->adicional}}"></textarea>
+          </div>
+      </div>                       
         <div class="form-group row">
           <label for="color" class="col-md-4 col-form-label text-md-right">Precio Mensual</label>
           <div class="col-md-6">
@@ -34,6 +40,12 @@
           <label for="color" class="col-md-4 col-form-label text-md-right">Precio Total</label>
           <div class="col-md-6">
               <input type="number" class="form-control" name="preciototal" placeholder="{{$product->preciototal}}">
+          </div>
+        </div>  
+        <div class="form-group row">
+          <label for="color" class="col-md-4 col-form-label text-md-right">¿Precio en dolar?</label>
+          <div class="col-md-6">
+              <input type="number" class="form-control" name="dolar" placeholder="{{$product->dolar}}">
           </div>
         </div>       
       
@@ -118,7 +130,31 @@
                           <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right" for="file">Suba una imagen</label>
                             <input id="file" class="btn btn-primary"name="file10" type="file" class="inputfile" />          
-                            </div>  --}}                        
+                            </div>  --}}   
+                            <div class="form-group row">
+                              <label for="color" class="col-md-4 col-form-label text-md-right">Agua</label>
+                              <div class="col-md-6">
+                                  <input type="number" class="form-control" name="agua" placeholder="{{$product->agua}}">
+                              </div>
+                            </div>     
+                            <div class="form-group row">
+                              <label for="color" class="col-md-4 col-form-label text-md-right">Luz</label>
+                              <div class="col-md-6">
+                                  <input type="number" class="form-control" name="luz" placeholder="{{$product->luz}}">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="color" class="col-md-4 col-form-label text-md-right">Gas</label>
+                              <div class="col-md-6">
+                                  <input type="number" class="form-control" name="gas" placeholder="{{$product->gas}}">
+                              </div>
+                            </div> 
+                            <div class="form-group row">
+                              <label for="color" class="col-md-4 col-form-label text-md-right">Cloacas</label>
+                              <div class="col-md-6">
+                                  <input type="number" class="form-control" name="cloacas" placeholder="{{$product->cloacas}}">
+                              </div>
+                            </div>                         
           <div class="form-group row mb-0 mt-5">
               <div class="col-md-6 offset-md-4">
                   <button type="submit" class="btn btn-primary">

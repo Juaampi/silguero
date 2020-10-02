@@ -31,14 +31,14 @@
 					@endif
         @endforeach - Mar del Plata</small>          
         @if($product->preciototal)
-        <h4 class="text-product-title mt-2" style="color: #676767">${{$product->preciototal}}</h4> 
+        <h4 class="text-product-title mt-2" style="color: #676767">@if($product->dolar == 1)usd @else $ @endif{{$product->preciototal}}</h4> 
         @endif
         @if($product->preciomensual)
-        <h4 class="text-product-title mt-2" style="color: #676767">${{$product->preciomensual}} <small class="text-danger text-sm" style="font-size: 12px;">Mensual</small></h4> 
+        <h4 class="text-product-title mt-2" style="color: #676767">@if($product->dolar == 1)usd @else $ @endif{{$product->preciomensual}} <small class="text-danger text-sm" style="font-size: 12px;">Mensual</small></h4> 
         @endif					
 					<span class="text-product-price mt-2">{{$product->direccion}}<span>		         
         <br>              
-        <h6 class="text-product-description mt-3">{{$product->description}}</h6>                
+        <h6 class="text-product-description mt-3" style="color: rgb(80, 80, 80)">{{$product->description}}</h6>                
         </div>                
     </div>
 </div>
@@ -48,14 +48,17 @@
         <h5 class="mt-5">Información de la propiedad</h5>
         <table class="table table-stripped">
             <tbody>
+              @if($product->subcategory_id != 4 && $product->subcategory_id != 10)
                 <tr>
                     <th>Ambientes</th>
                       <td>{{$product->ambientes}}</td>                   
                   </tr>
                 <tr>
+                @endif
                   <th>Metros Cuadrados</th>
                     <td>{{$product->metros}}</td>                   
                 </tr>
+                @if($product->subcategory_id != 4 && $product->subcategory_id != 10)
                 <tr>
                   <th>Habitaciones</th>
                     <td>
@@ -68,6 +71,7 @@
                       {{$product->baños}}
                       </td>                                       
                   </tr>
+                  @endif
                   <tr>
                     <th>Barrio</th>
                       <td>
@@ -77,14 +81,54 @@
                   <tr>
                     <th>Adicional</th>
                       <td>
-                      A metros del mar!
+                      {{$product->adicional}}
+                      </td>                                       
+                  </tr>
+                  <tr>
+                    <th>Agua</th>
+                      <td>
+                        @if($product->agua == 1)
+                        Si
+                        @else
+                        No
+                        @endif
+                      </td>                                       
+                  </tr>
+                  <tr>
+                    <th>Luz</th>
+                      <td>
+                        @if($product->luz == 1)
+                        Si
+                        @else
+                        No
+                        @endif
+                      </td>                                       
+                  </tr>
+                  <tr>
+                    <th>Gas</th>
+                      <td>
+                        @if($product->gas == 1)
+                        Si
+                        @else
+                        No
+                        @endif
+                      </td>                                       
+                  </tr>
+                  <tr>
+                    <th>Cloacas</th>
+                      <td>
+                        @if($product->cloacas == 1)
+                        Si
+                        @else
+                        No
+                        @endif
                       </td>                                       
                   </tr>
             </tbody>
         </table>
     </div>
 </div>
-<button type="button" class="btn btn-success btn-lg btn-block">Comunicarme por Whatsapp <i class="fa fa-whatsapp" aria-hidden="true"></i></button>
+<a href="https://wa.me/+5492257617239" class="btn btn-success btn-lg btn-block">Comunicarme por Whatsapp <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 </div>
 
 

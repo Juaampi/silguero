@@ -24,6 +24,12 @@
             </div>
         </div>
         <div class="form-group row">
+          <label for="description" class="col-md-4 col-form-label text-md-right">Informacion Adicional</label>
+          <div class="col-md-6">
+              <textarea type="text" class="form-control" name="adicional"></textarea>
+          </div>
+      </div>
+        <div class="form-group row">
           <label for="category" class="col-md-4 col-form-label text-md-right">Categoria</label>
           <div class="col-md-6">
           <select id="category" class="form-control" name="category_id">
@@ -54,6 +60,13 @@
           <div class="col-md-6">
               <input type="number" class="form-control" name="preciototal" placeholder="Ejemplo: 10000">
           </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="discount" class="col-md-4 col-form-label text-md-right">¿Precio en Dolar?</label>
+          <div class="col-md-6">
+            <input id="discount" type="number" class="form-control" name="dolar" required placeholder="Para si 1 para no 0"/>
+          </div>
         </div>       
       
           <div class="form-group row">
@@ -72,13 +85,13 @@
           <div class="form-group row">
               <label for="price" class="col-md-4 col-form-label text-md-right">Habitaciones</label>
               <div class="col-md-6">
-                <input id="price" type="number" class="form-control" name="habitaciones" required placeholder="Ejemplo: 2"/>
+                <input id="price" type="number" class="form-control" name="habitaciones" placeholder="Ejemplo: 2"/>
               </div>
           </div>
           <div class="form-group row">
               <label for="stock" class="col-md-4 col-form-label text-md-right">Baños </label>
               <div class="col-md-6">
-                <input id="stock" type="number" class="form-control" name="baños" required placeholder="Ejemplo: 1"/>
+                <input id="stock" type="number" class="form-control" name="baños" placeholder="Ejemplo: 1"/>
               </div>
           </div>
           <div class="form-group row">
@@ -90,9 +103,10 @@
           <div class="form-group row">
             <label for="discount" class="col-md-4 col-form-label text-md-right">Cochera</label>
             <div class="col-md-6">
-              <input id="discount" type="text" class="form-control" name="cochera" required placeholder="Para si 1 para no 0"/>
+              <input id="discount" type="text" class="form-control" name="cochera" placeholder="Para si 1 para no 0"/>
             </div>
         </div>
+       
           <div class="form-group row">
           <label class="col-md-4 col-form-label text-md-right" for="file">Suba una imagen</label>
           <input id="file" class="btn btn-primary"name="file1" type="file" class="inputfile" />          
@@ -133,7 +147,31 @@
                           <div class="form-group row">
                             <label class="col-md-4 col-form-label text-md-right" for="file">Suba una imagen</label>
                             <input id="file" class="btn btn-primary"name="file10" type="file" class="inputfile" />          
-                            </div>  --}}                        
+                            </div>  --}}   
+                            <div class="form-group row">
+                              <label for="discount" class="col-md-4 col-form-label text-md-right">Luz</label>
+                              <div class="col-md-6">
+                                <input id="discount" type="text" class="form-control" name="luz" required placeholder="Para si 1 para no 0"/>
+                              </div>
+                          </div>    
+                          <div class="form-group row">
+                            <label for="discount" class="col-md-4 col-form-label text-md-right">Gas</label>
+                            <div class="col-md-6">
+                              <input id="discount" type="text" class="form-control" name="gas" required placeholder="Para si 1 para no 0"/>
+                            </div>
+                        </div>  
+                        <div class="form-group row">
+                          <label for="discount" class="col-md-4 col-form-label text-md-right">Agua</label>
+                          <div class="col-md-6">
+                            <input id="discount" type="text" class="form-control" name="agua" required placeholder="Para si 1 para no 0"/>
+                          </div>
+                      </div> 
+                      <div class="form-group row">
+                        <label for="discount" class="col-md-4 col-form-label text-md-right">Cloacas</label>
+                        <div class="col-md-6">
+                          <input id="discount" type="text" class="form-control" name="cloacas" required placeholder="Para si 1 para no 0"/>
+                        </div>
+                    </div>                       
           <div class="form-group row mb-0 mt-5">
               <div class="col-md-6 offset-md-4">
                   <button type="submit" class="btn btn-primary">

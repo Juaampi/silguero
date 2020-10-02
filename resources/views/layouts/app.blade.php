@@ -79,10 +79,10 @@
 			  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
 			</li>			
 			<li class="nav-item ">
-			  <a class="nav-link">
+			  <a class="nav-link" href="https://wa.me/+5492257617239">
 				Contacto
 			  </a>			  			  
-			</li>
+			</li>			
 		  </ul>		  		
 		</ul>
 		</div>
@@ -92,7 +92,7 @@
 	@yield('content')
 		
 		<div class="row" style="position:fixed; bottom: 5%; right :7%;z-index: 9999; " >			
-			<a href="/pedido" style="padding: 8px;background: #28a745;border-radius: 70px;width: 65px;">
+			<a href="https://wa.me/+5492257617239" style="padding: 8px;background: #28a745;border-radius: 70px;width: 65px;">
 				<i style="font-size: 50px;margin-left: 3px;" class="fa fa-whatsapp text-white" aria-hidden="true"></i><span class="badge badge-dark" style="font-size: 15px;position: absolute;top: 0px;"></span>
 			</a>
 		</div>		

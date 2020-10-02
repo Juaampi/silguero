@@ -22,6 +22,36 @@ class ProductController extends Controller {
 	public function save(Request $request){
 		$product = Product::find($request['id']);
 
+		if(!empty($request['dolar'])){
+			$product->dolar = $request['dolar'];
+			$product->save();
+		}
+
+		if(!empty($request['agua'])){
+			$product->agua = $request['agua'];
+			$product->save();
+		}
+
+		if(!empty($request['luz'])){
+			$product->luz = $request['luz'];
+			$product->save();
+		}
+
+		if(!empty($request['gas'])){
+			$product->gas = $request['gas'];
+			$product->save();
+		}
+
+		if(!empty($request['cloacas'])){
+			$product->gas = $request['cloacas'];
+			$product->save();
+		}
+
+		if(!empty($request['adicional'])){
+			$product->adicional = $request['adicional'];
+			$product->save();
+		}
+
 		if(!empty($request['direccion'])){
 			$product->direccion = $request['direccion'];
 			$product->save();
@@ -94,6 +124,12 @@ class ProductController extends Controller {
 	public function editar(Request $request){
 		$product = Product::find($request['id']);
 		return view('editar',['product' => $product]);
+	}
+
+	public function delete(Request $request){
+		$product = Product::find($request['id']);
+		$product->delete();
+		return redirect()->back()->with('success', 'success');
 	}
 
 	public function administracion(){
@@ -235,7 +271,13 @@ class ProductController extends Controller {
 		$product->preciomensual = $request['preciomensual'];
 		$product->subcategory_id = $request['subcategory_id'];
 		$product->ambientes = $request['ambientes'];		
-		$product->metros = $request['metros'];		
+		$product->metros = $request['metros'];	
+		$product->adicional = $request['adicional'];
+		$product->dolar = $request['dolar'];
+		$product->cloacas = $request['cloacas'];
+		$product->luz = $request['luz'];
+		$product->gas = $request['gas'];
+		$product->agua = $request['agua'];		
 
 		  if($request->hasFile('file1')){
             $file = $request->file('file1');
