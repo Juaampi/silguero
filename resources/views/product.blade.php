@@ -8,9 +8,15 @@
       <div class="swiper-container s3">
         <div class="swiper-wrapper">
           
-          <div class="swiper-slide"><img style="width: 100%" src="img-products/{{$product->img1}}"></div>
+          @if($product->img1)
+            <div class="swiper-slide"><img style="width: 100%" src="img-products/{{$product->img1}}"></div>
+          @endif
+          @if($product->img2)
           <div class="swiper-slide"><img style="width: 100%" src="img-products/{{$product->img2}}"></div>
+          @endif
+          @if($product->img3)
           <div class="swiper-slide"><img style="width: 100%" src="img-products/{{$product->img3}}"></div>                   
+          @endif
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
